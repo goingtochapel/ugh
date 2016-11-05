@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I recently made the move out to San Francisco after finishing my MBA at UNC and traveling through Nepal, Thailand, Vietnam and Indonesia to check out an area of the world unknown to me.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Before business school, I was a Mechanical Design Engineer on a Nuclear Power Plant in Augusta, GA. The work was fun and the commute was long and after a few years was ready for something new.
+               
+Growing up, I was always building RC planes and fixing things around the house which led me into Mechanical Engineering. I also love playing tennis, soccer and golf and anything outdoors.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[bo.rhyne1@gmail.com](mailto:bo.rhyne1@gmail.com)
