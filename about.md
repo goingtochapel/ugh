@@ -4,13 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I recently made the move out to San Francisco after finishing my MBA at UNC and traveling through Nepal, Thailand, Vietnam and Indonesia to check out an area of the world unknown to me.
+I recently made the move to San Francisco after finishing my MBA at UNC and traveling through Nepal, Thailand, Vietnam and Indonesia over the summer.
 
 ### More Information
 
 Before business school, I was a Mechanical Design Engineer on a Nuclear Power Plant in Augusta, GA. The work was fun and the commute was long and after a few years was ready for something new.
                
-Growing up, I was always building RC planes and fixing things around the house which led me into Mechanical Engineering. I also love playing tennis, soccer and golf and anything outdoors.
+Growing up, I was always building RC planes and fixing things around the house which led me into Mechanical Engineering. I love playing tennis, soccer and golf and doing anything outdoors.
 
 ### Contact me
 
