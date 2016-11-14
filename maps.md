@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Map
-permalink: /map/
+title: Maps
+permalink: /maps/
 ---
 
 Here's a map of everwhere I've lived.
