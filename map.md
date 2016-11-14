@@ -4,7 +4,7 @@ title: Map
 permalink: /map/
 ---
 
-Here's a map of everwhere I've lived. Check it out and let me know what you think.
+Here's a map of everwhere I've lived.
 
 ### Map
 
