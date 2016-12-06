@@ -295,7 +295,7 @@ _.each(beerData, function(d) {
     ])
     .sortBy(function (d) { return d.NumReviews; })
     .order(d3.descending)
-    .size(15)
+    .size(Infinity)
     .on('renderlet', function (table) {
       // each time table is rendered remove nasty extra row dc.js insists on adding
       table.select('tr.dc-table-group').remove();
@@ -317,16 +317,6 @@ _.each(beerData, function(d) {
   d3.selectAll('a#all').on('click', function () {
     dc.filterAll();
     dc.renderAll();
-  });
-
-  d3.selectAll('a#year').on('click', function () {
-    placeholder1Chart.filterAll();
-    dc.redrawAll();
-  });
-
-  d3.selectAll('a#month').on('click', function () {
-    placeholder2Chart.filterAll();
-    dc.redrawAll();
   });
 
   d3.selectAll('a#day').on('click', function () {
