@@ -285,7 +285,6 @@ _.each(beerData, function(d) {
    dataTable
     .dimension(allDim)
     .group(function (d) { return 'dc.js insists on putting a row here so I remove it using JS'; })
-    .size(15)
     .columns([
       function (d) { return d.Brewery; },
       function (d) { return d.Address; },
@@ -294,8 +293,9 @@ _.each(beerData, function(d) {
       function (d) { return d.YelpRating; },
       function (d) { return d.NumReviews; }
     ])
-    .sortBy(dc.pluck('NumReviews'))
+    .sortBy(function (d) { return d.NumReviews; })
     .order(d3.descending)
+    .size(15)
     .on('renderlet', function (table) {
       // each time table is rendered remove nasty extra row dc.js insists on adding
       table.select('tr.dc-table-group').remove();
