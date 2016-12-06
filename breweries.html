@@ -285,7 +285,7 @@ _.each(beerData, function(d) {
    dataTable
     .dimension(allDim)
     .group(function (d) { return 'dc.js insists on putting a row here so I remove it using JS'; })
-    .size(500)
+    .size(15)
     .columns([
       function (d) { return d.Brewery; },
       function (d) { return d.Address; },
@@ -302,7 +302,7 @@ _.each(beerData, function(d) {
 
       // update map with breweries to match filtered data
       breweryMarkers.clearLayers();
-      _.each(allDim.top(50), function (d) {
+      _.each(allDim.top(Infinity), function (d) {
         var loc = d.Address;
         var name = d.Brewery;
         var marker = L.marker([d.lat, d.lng]);
