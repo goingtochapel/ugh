@@ -302,7 +302,7 @@ _.each(beerData, function(d) {
 
       // update map with breweries to match filtered data
       breweryMarkers.clearLayers();
-      _.each(allDim.top(Infinity), function (d) {
+      _.each(YelpReviewDim.top(50), function (d) {
         var loc = d.Address;
         var name = d.Brewery;
         var marker = L.marker([d.lat, d.lng]);
