@@ -295,7 +295,7 @@ _.each(beerData, function(d) {
     ])
     .sortBy(function (d) { return d.NumReviews; })
     .order(d3.descending)
-    .size(Infinity)
+    .top(50)
     .on('renderlet', function (table) {
       // each time table is rendered remove nasty extra row dc.js insists on adding
       table.select('tr.dc-table-group').remove();
