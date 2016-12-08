@@ -1,8 +1,9 @@
 Timestamp,Brewery,Address,Person,lat,lng,PopDensity,YelpRating,MedianIncome,NumReviews,Bo,Buck,Mike,Jack,Hart,Trey,Logan,Richard
-12/5/2016 21:54:10,Portland Japanese Gardens,its so beautiful ,Bo,45.5188296,-122.7101633,1,http://japanesegarden.com/,9.5,-8,-1,-1,-1,-1,-1,-1,-1,-1
-12/7/2016 22:13:57,Lan Su Chinese Garden,incredible gardens,Bo,45.525415,-122.6754627,1,http://www.lansugarden.org/,9.5,-8,-1,-1,-1,-1,-1,-1,-1,-1
-12/7/2016 22:13:57,International Rose Gardens,Roses!,Bo,45.5189509,-122.7052726,1,https://www.travelportland.com/article/portland-rose-garden/,0,2,-1,1,1,1,-1,1,1,-1
-12/7/2016 22:13:57,Columbia Gorge Scenic Highway,Incredible drive along the river,Bo,45.6129736,-122.2492286,4,http://traveloregon.com/trip-ideas/scenic-byways/the-historic-columbia-river-highway/,0,8,1,1,1,1,1,1,1,1
-12/7/2016 22:13:57,Lost Lake,beautiful views of Mt. Hood and access to the Lost Lake Resort's store and boating equipment. ,Bo,45.4893401,-121.8311728,3,"https://en.wikipedia.org/wiki/Lost_Lake_(Hood_River_County,_Oregon)",0,4,1,1,1,0,0,0,0,1
-12/7/2016 22:13:57,Trillium Lake,"The lake is amazing. You can hike around it, go swimming, bring a lunch and eat at the picnic tables, or even camp out. Easily at least a day's worth of fun and probably more.",Bo,45.2708634,-121.7469744,3,https://www.tripadvisor.com/Attraction_Review-g52024-d4513494-Reviews-Trillium_Lake-Portland_Oregon.html,0,-2,1,-1,1,-1,1,-1,-1,-1
-12/7/2016 22:13:57,Larch Mt. Lookout,"Lookout at 4,000ft. Longer drive to the top & $5 to drive all the way up.",Bo,45.5309522,-122.0925518,6,http://www.oregonhikers.org/field_guide/Sherrard_Point,0,8,1,1,1,1,1,1,1,1
+12/5/2016 21:54,Portland Japanese Gardens,its so beautiful ,Bo,45.5188296,-122.7101633,1,http://japanesegarden.com/,9.5,-8,-1,-1,-1,-1,-1,-1,-1,-1
+12/7/2016 22:13,Lan Su Chinese Garden,incredible gardens,Bo,45.525415,-122.6754627,1,http://www.lansugarden.org/,9.5,-8,-1,-1,-1,-1,-1,-1,-1,-1
+12/7/2016 22:13,International Rose Gardens,Roses!,Bo,45.5189509,-122.7052726,1,https://www.travelportland.com/article/portland-rose-garden/,0,2,-1,1,1,1,-1,1,1,-1
+12/7/2016 22:13,Columbia Gorge Scenic Highway,Incredible drive along the river,Bo,45.6129736,-122.2492286,4,http://traveloregon.com/trip-ideas/scenic-byways/the-historic-columbia-river-highway/,0,8,1,1,1,1,1,1,1,1
+12/7/2016 22:13,Lost Lake,beautiful views of Mt. Hood and access to the Lost Lake Resort's store and boating equipment. ,Bo,45.4893401,-121.8311728,3,"https://en.wikipedia.org/wiki/Lost_Lake_(Hood_River_County,_Oregon)",0,4,1,1,1,0,0,0,0,1
+12/7/2016 22:13,Trillium Lake,"The lake is amazing. You can hike around it, go swimming, bring a lunch and eat at the picnic tables, or even camp out. Easily at least a day's worth of fun and probably more.",Bo,45.2708634,-121.7469744,3,https://www.tripadvisor.com/Attraction_Review-g52024-d4513494-Reviews-Trillium_Lake-Portland_Oregon.html,0,-2,1,-1,1,-1,1,-1,-1,-1
+12/7/2016 22:13,Larch Mt. Lookout,"Lookout at 4,000ft. Longer drive to the top & $5 to drive all the way up.",Bo,45.5309522,-122.0925518,6,http://www.oregonhikers.org/field_guide/Sherrard_Point,0,8,1,1,1,1,1,1,1,1
+12/8/2016 22:13,Portland Timbers Game,Best soccer atmosphere in US - get general admission tickets in Timbers Army section,Sheffield,45.521553,-122.691906,2,http://www.timbers.com/schedule,30,8,1,1,1,1,1,1,1,1
