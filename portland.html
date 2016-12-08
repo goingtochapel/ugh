@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Best Brewery</title>
+    <title>Trip Planner</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/dc.css">
     <link rel="stylesheet" type="text/css" href="css/leaflet.css">
@@ -13,9 +13,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12 dc-data-count dc-chart" id="data-count">
-      <h2>Brewery Finder
+      <h2>Portland Trip
         <small>
-          <span class="filter-count"></span> selected out of <span class="total-count"></span> Breweries |
+          <span class="filter-count"></span> selected out of <span class="total-count"></span> places |
            <a id="all" href="#">Start Over</a>
           </span>
         </small>
@@ -25,13 +25,11 @@
   <div class="row" id="control-row">
     
     <div class="col-md-6">
-      <h4>Breweries</h4>
+      <h4>Where to go?</h4>
       <div id="map" style="width: 100%; height: 300px"></div>
     </div>
 
-    <div class="col-xs-6 col-md-3">
-      <div class="dc-chart" id="chart-barYelpReview"></div>
-    </div>
+
     <div class="col-xs-6 col-md-3">
       <div class="dc-chart" id="chart-NumReviews"></div>
     </div>
@@ -41,55 +39,34 @@
     <div class="col-xs-6 col-md-3">
       <div class="dc-chart" id="chart-MedianIncome"></div>
     </div>
-  </div>
-<!--    <div class="col-xs-2 pie-chart">
-      <h4>placeholder <small><a id="year">reset</a></small></h4>
-      <div class="dc-chart" id="chart-placeholder1"></div>
-    </div>
-    <div class="col-xs-2 pie-chart">
-      <h4>placeholder <small><a id="month" href="#">reset</a></small></h4>
-      <div class="dc-chart" id="chart-placeholder2"></div>
-    </div> -->
-  <div class="row">
+
     
-  
-    <div class="col-xs-2 pie-chart">
-      <h4>Yelp Rating <small><a id="day">reset</a></small></h4>
-      <div id="chart-yelpreview" class="dc-chart"></div>
-    </div>
-    <div class="col-xs-10">
-<!--     <table class="table table-bordered table-striped" id="data-table"> -->
+
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
       <table id="data-table" class="display table table-bordered table-striped" cellspacing="0" width="100%">
         <thead>
           <tr class="header">
-            <th>Brewery</th>
-            <th>Address</th>
-            <th>Population Density</th>
-            <th>Median Income</th>
-            <th>Yelp Score</th>
-            <th>Number of Ratings</th>
+            <th>Name of Place</th>
+            <th>Why to visit</th>
+            <th>Hours?</th>
+            <th>Cost?</th>
+            <th>Link to more info</th>
           </tr>
         </thead>
         <tfoot>
           <tr class="header">
-            <th>Brewery</th>
-            <th>Address</th>
-            <th>Population Density</th>
-            <th>Median Income</th>
-            <th>Yelp Score</th>
-            <th>Number of Ratings</th>
+            <th>Name of Place</th>
+            <th>Why to visit</th>
+            <th>Hours?</th>
+            <th>Cost?</th>
+            <th>Link to more info</th>
           </tr>
         </tfoot>
       </table>
     </div>
-<!--    <div class="col-xs-2 pie-chart">
-      <h4>placeholder <small><a id="year">reset</a></small></h4>
-      <div class="dc-chart" id="chart-placeholder1"></div>
-    </div>
-    <div class="col-xs-2 pie-chart">
-      <h4>placeholder <small><a id="month" href="#">reset</a></small></h4>
-      <div class="dc-chart" id="chart-placeholder2"></div>
-    </div> -->
 
   </div>
   <div class="row">
@@ -113,7 +90,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{
   //maxZoom: 16
 } ).addTo(map);
 
-d3.csv('brewerydata.csv', function(error, data) {
+d3.csv('Portland Trip (Responses) - Form Responses 1.csv', function(error, data) {
 //d3.csv('brewerydata.csv', function(error, data) {  
   var beerData = data;
 
@@ -124,97 +101,43 @@ d3.csv('brewerydata.csv', function(error, data) {
 
 _.each(beerData, function(d) {
   d.count = +d.count;
-  // round to nearest 10
   d.MedianIncome = Math.round(+d.MedianIncome);
-  // round to nearest 0.5
-  d.YelpRating = Math.round(+d.YelpRating *2) / 2;
-  // round to nearest 50
-  d.NumReviews = Math.round(+d.NumReviews * 20) / 20;
   d.PopDensity = Math.round(+d.PopDensity);
   });     
-
 
   // set crossfilter
   var ndx = crossfilter(beerData);
 
   // create dimensions (x-axis values)
-  var placeholder1Dim  = ndx.dimension(function(d) {return d.YelpRating;}),
-      // dc.pluck: short-hand for same kind of anon. function we used for placeholder1Dim
-      placeholder2Dim  = ndx.dimension(dc.pluck('YelpRating')),
-      YelpReviewDim = ndx.dimension(dc.pluck('YelpRating')),
-      YelpBarDim = ndx.dimension(function(d) {return d.YelpRating;}),
-      NumReviewsDim = ndx.dimension(function(d) {return d.NumReviews;}),
+  var NumReviewsDim = ndx.dimension(function(d) {return d.NumReviews;}),
       miDim = ndx.dimension(function(d) {return d.MedianIncome;}),
       PDDim = ndx.dimension(function(d) {return d.PopDensity;}),
       allDim = ndx.dimension(function(d) {return d;});
 
   // create groups (y-axis values)
   var all = ndx.groupAll();
-  var countPerP1 = placeholder1Dim.group().reduceCount(),
-      countPerP2 = placeholder2Dim.group().reduceCount(),
-      countPeryelpreview = YelpReviewDim.group().reduceCount(),
-      countPerYelpBar = YelpBarDim.group().reduceCount(),
-      countPerNumReviews = NumReviewsDim.group().reduceCount(),
+  var countPerNumReviews = NumReviewsDim.group().reduceCount(),
       countPerPD = PDDim.group().reduceCount(),
       countPerMI = miDim.group().reduceCount();
 
   // specify charts
-  var placeholder1Chart   = dc.pieChart('#chart-placeholder1'),
-      placeholder2Chart   = dc.pieChart('#chart-placeholder2'),
-      yelpreviewChart   = dc.pieChart('#chart-yelpreview'),
-      ratingCountChart  = dc.barChart('#chart-barYelpReview'),
-      numreviewsChart  = dc.barChart('#chart-NumReviews'),
+  var numreviewsChart  = dc.barChart('#chart-NumReviews'),
       popdensityChart  = dc.barChart('#chart-PopDensity'),
       medianincomeChart = dc.barChart('#chart-MedianIncome'),
       dataCount = dc.dataCount('#data-count')
       dataTable = dc.dataTable('#data-table');
-
-  placeholder1Chart
-      .width(150)
-      .height(150)
-      .dimension(placeholder1Dim)
-      .group(countPerP1)
-      .innerRadius(75);
-
-  placeholder2Chart
-      .width(150)
-      .height(150)
-      .dimension(placeholder2Dim)
-      .group(countPerP2)
-      .innerRadius(75);
-
-  yelpreviewChart
-      .width(150)
-      .height(150)
-      .dimension(YelpReviewDim)
-      .group(countPeryelpreview)
-      .innerRadius(50);
-
-  ratingCountChart
-      .width(300)
-      .height(180)
-      .dimension(YelpBarDim)
-      .group(countPerYelpBar)
-      .x(d3.scale.linear().domain([0,5.2]))
-      .elasticY(true)
-      .centerBar(true)
-      .xUnits(function(){return 10;})
-      .xAxisLabel('Yelp Rating')
-      .yAxisLabel('Count')
-      .margins({top: 10, right: 20, bottom: 50, left: 50});
-  ratingCountChart.xAxis().tickValues([0, 1, 2, 3, 4, 5]);
 
   numreviewsChart
       .width(300)
       .height(180)
       .dimension(NumReviewsDim)
       .group(countPerNumReviews)
-      .x(d3.scale.linear().domain([-250, d3.max(beerData, function (d) { return d.NumReviews; })*1.1]))
+      .x(d3.scale.linear().domain([-9, d3.max(beerData, function (d) { return d.NumReviews; })*1.1]))
       .elasticY(true)
       .centerBar(true)
       .xUnits(function(){return 10;})
       .barPadding(2)
-      .xAxisLabel('Number of Reviews')
+      .xAxisLabel('Total Vote (8 = great, -8 = terrible)')
       .yAxisLabel('Count')
       .margins({top: 10, right: 20, bottom: 50, left: 50});
 
@@ -223,12 +146,12 @@ _.each(beerData, function(d) {
       .height(180)
       .dimension(PDDim)
       .group(countPerPD)
-      .x(d3.scale.linear().domain([-1, d3.max(beerData, function (d) { return d.PopDensity; })*1.1]))
+      .x(d3.scale.linear().domain([-0.5, d3.max(beerData, function (d) { return d.PopDensity; })*1.1]))
       .xUnits(function(){return 10;})
       .barPadding(2)
       .elasticY(true)
       .centerBar(true)
-      .xAxisLabel('Population Density')
+      .xAxisLabel('Activity Length')
       .yAxisLabel('Count')
       .margins({top: 10, right: 20, bottom: 50, left: 50});
 
@@ -242,7 +165,7 @@ _.each(beerData, function(d) {
       .centerBar(true)
       .xUnits(function(){return 10;})
       .barPadding(2)
-      .xAxisLabel('Median Income ($1,000s)')
+      .xAxisLabel('Activity Cost')
       .yAxisLabel('Count')
       //.xUnits(function (d) { return 5;})
       .margins({top: 10, right: 20, bottom: 50, left: 50});
@@ -258,11 +181,10 @@ _.each(beerData, function(d) {
       function (d) { return d.Brewery; },
       function (d) { return d.Address; },
       function (d) { return d.PopDensity; },
-      function (d) { return d.MedianIncome*1000; },
-      function (d) { return d.YelpRating; },
-      function (d) { return d.NumReviews; }
+      function (d) { return d.MedianIncome; },
+      function (d) { return d.YelpRating; }
     ])
-    .sortBy(function (d) { return d.NumReviews; })
+    .sortBy(function (d) { return d.Brewery; })
     .order(d3.descending)
     .size(Infinity)
     .on('renderlet', function (table) {
@@ -271,7 +193,7 @@ _.each(beerData, function(d) {
 
       // update map with breweries to match filtered data
       breweryMarkers.clearLayers();
-      _.each(YelpReviewDim.top(100), function (d) {
+      _.each(allDim.top(100), function (d) {
         var loc = d.Address;
         var name = d.Brewery;
         var marker = L.marker([d.lat, d.lng]);
@@ -286,11 +208,6 @@ _.each(beerData, function(d) {
   d3.selectAll('a#all').on('click', function () {
     dc.filterAll();
     dc.renderAll();
-  });
-
-  d3.selectAll('a#day').on('click', function () {
-    yelpreviewChart.filterAll();
-    dc.redrawAll();
   });
 
   // showtime!
