@@ -8,6 +8,17 @@
     <link rel="stylesheet" type="text/css" href="css/leaflet.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Hotjar Tracking Code for borhyne.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:353217,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 <body>
 <div class="container-fluid">
@@ -153,7 +164,7 @@ _.each(beerData, function(d) {
       .barPadding(2)
       .elasticY(true)
       .centerBar(true)
-      .xAxisLabel('Activity Length')
+      .xAxisLabel('Activity Length (hours)')
       .yAxisLabel('Count')
       .margins({top: 10, right: 20, bottom: 50, left: 50});
 
@@ -167,7 +178,7 @@ _.each(beerData, function(d) {
       .centerBar(true)
       .xUnits(function(){return 10;})
       .barPadding(2)
-      .xAxisLabel('Activity Cost')
+      .xAxisLabel('Activity Cost ($)')
       .yAxisLabel('Count')
       //.xUnits(function (d) { return 5;})
       .margins({top: 10, right: 20, bottom: 50, left: 50});
