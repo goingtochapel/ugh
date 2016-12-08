@@ -50,6 +50,7 @@
         <thead>
           <tr class="header">
             <th>Name of Place</th>
+            <th>Vote Count</th>
             <th>Why to visit</th>
             <th>Hours?</th>
             <th>Cost?</th>
@@ -59,6 +60,7 @@
         <tfoot>
           <tr class="header">
             <th>Name of Place</th>
+            <th>Vote Count</th>
             <th>Why to visit</th>
             <th>Hours?</th>
             <th>Cost?</th>
@@ -179,12 +181,13 @@ _.each(beerData, function(d) {
     .group(function (d) { return 'dc.js insists on putting a row here so I remove it using JS'; })
     .columns([
       function (d) { return d.Brewery; },
+      function (d) { return d.NumReviews; },
       function (d) { return d.Address; },
       function (d) { return d.PopDensity; },
       function (d) { return d.MedianIncome; },
       function (d) { return d.YelpRating; }
     ])
-    .sortBy(function (d) { return d.Brewery; })
+    .sortBy(function (d) { return d.NumReviews; })
     .order(d3.descending)
     .size(Infinity)
     .on('renderlet', function (table) {
