@@ -44,7 +44,7 @@
           <tr class="header">
             <th>Name of Place</th>
             <th>Who's Point?</th>
-            <th>Vote Count</th>
+            <th>Vote %</th>
             <th>Why go here</th>
             <th>Hours?</th>
             <th>Cost?</th>
@@ -55,7 +55,7 @@
           <tr class="header">
             <th>Name of Place</th>
             <th>Who's Point?</th>
-            <th>Vote Count</th>
+            <th>Vote %</th>
             <th>Why go here</th>
             <th>Hours?</th>
             <th>Cost?</th>
@@ -136,7 +136,7 @@ _.each(travelData, function(d) {
       .centerBar(true)
       .xUnits(function(){return 10;})
       .barPadding(2)
-      .xAxisLabel('Total Vote (8 = great, -8 = terrible)')
+      .xAxisLabel('Vote Percent out of 100')
       .margins({top: 10, right: 20, bottom: 50, left: 50});
 
   visitTimeChart
