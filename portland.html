@@ -28,13 +28,13 @@
       <div id="map" style="width: 100%; height: 300px"></div>
     </div>
     <div class="col-xs-6 col-md-3">
-      <div class="dc-chart" id="chart-NumReviews"></div>
+      <div class="dc-chart" id="chart-votecount"></div>
     </div>
     <div class="col-xs-6 col-md-3">
-      <div class="dc-chart" id="chart-PopDensity"></div>
+      <div class="dc-chart" id="chart-visittime"></div>
     </div>
     <div class="col-xs-6 col-md-3">
-      <div class="dc-chart" id="chart-MedianIncome"></div>
+      <div class="dc-chart" id="chart-cost"></div>
     </div>
   </div>
   <div class="row">
@@ -75,14 +75,13 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.0-dev/dc.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/tabletop.js"></script>
-<!--js/dc.js-->
 <script type="text/javascript" src="js/leaflet.js"></script>
 <script type="text/javascript" src="js/underscore-min.js"></script>
 <script type="text/javascript" >
 
 /* instantiate and configure map */
 var map = L.map('map');
-var breweryMarkers = new L.FeatureGroup();
+var placesMarkers = new L.FeatureGroup();
 
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYm9yaHluZSIsImEiOiJjaXZyOWxjM2kwM3RuMnp0ODFmazg5NGhzIn0.-nn9OxmxJ03rHNtZlCNUWw', {
   //maxZoom: 16
@@ -97,43 +96,42 @@ function renderSpreadsheetData() {
 }
 
 function draw(data, tabletop) {
-//d3.csv('brewerydata.csv', function(error, data) {  
-  var beerData = data;
+  var travelData = data;
 
-_.each(beerData, function(d) {
+_.each(travelData, function(d) {
   d.count = +d.count;
   d.Cost = Math.round(+d.Cost);
   d.Length_of_Visit = Math.round(+d.Length_of_Visit);
   });     
 
   // set crossfilter
-  var ndx = crossfilter(beerData);
+  var ndx = crossfilter(travelData);
 
   // create dimensions (x-axis values)
-  var NumReviewsDim = ndx.dimension(function(d) {return d.Vote_Count;}),
-      miDim = ndx.dimension(function(d) {return d.Cost;}),
-      PDDim = ndx.dimension(function(d) {return d.Length_of_Visit;}),
+  var votecountDim = ndx.dimension(function(d) {return d.Vote_Count;}),
+      costDim = ndx.dimension(function(d) {return d.Cost;}),
+      visittimeDim = ndx.dimension(function(d) {return d.Length_of_Visit;}),
       allDim = ndx.dimension(function(d) {return d;});
 
   // create groups (y-axis values)
   var all = ndx.groupAll();
-  var countPerNumReviews = NumReviewsDim.group().reduceCount(),
-      countPerPD = PDDim.group().reduceCount(),
-      countPerMI = miDim.group().reduceCount();
+  var countPerNumReviews = votecountDim.group().reduceCount(),
+      countPervisittime = visittimeDim.group().reduceCount(),
+      countPercost = costDim.group().reduceCount();
 
   // specify charts
-  var numreviewsChart  = dc.barChart('#chart-NumReviews'),
-      popdensityChart  = dc.barChart('#chart-PopDensity'),
-      medianincomeChart = dc.barChart('#chart-MedianIncome'),
+  var votecountChart  = dc.barChart('#chart-votecount'),
+      visitTimeChart  = dc.barChart('#chart-visittime'),
+      costChart = dc.barChart('#chart-cost'),
       dataCount = dc.dataCount('#data-count')
       dataTable = dc.dataTable('#data-table');
 
-  numreviewsChart
+  votecountChart
       .width(300)
       .height(180)
-      .dimension(NumReviewsDim)
+      .dimension(votecountDim)
       .group(countPerNumReviews)
-      .x(d3.scale.linear().domain([-9, d3.max(beerData, function (d) { return d.Vote_Count; })*1.1]))
+      .x(d3.scale.linear().domain([-9, d3.max(travelData, function (d) { return d.Vote_Count; })*1.1]))
       .elasticY(true)
       .centerBar(true)
       .xUnits(function(){return 10;})
@@ -141,12 +139,12 @@ _.each(beerData, function(d) {
       .xAxisLabel('Total Vote (8 = great, -8 = terrible)')
       .margins({top: 10, right: 20, bottom: 50, left: 50});
 
-  popdensityChart
+  visitTimeChart
       .width(300)
       .height(180)
-      .dimension(PDDim)
-      .group(countPerPD)
-      .x(d3.scale.linear().domain([-0.5, d3.max(beerData, function (d) { return d.Length_of_Visit; })*1.1]))
+      .dimension(visittimeDim)
+      .group(countPervisittime)
+      .x(d3.scale.linear().domain([-0.5, d3.max(travelData, function (d) { return d.Length_of_Visit; })*1.1]))
       .xUnits(function(){return 10;})
       .barPadding(2)
       .elasticY(true)
@@ -154,12 +152,12 @@ _.each(beerData, function(d) {
       .xAxisLabel('Activity Length (hours)')
       .margins({top: 10, right: 20, bottom: 50, left: 50});
 
-  medianincomeChart
+  costChart
       .width(300)
       .height(180)
-      .dimension(miDim)
-      .group(countPerMI)
-      .x(d3.scale.linear().domain([-5, d3.max(beerData, function (d) { return d.Cost; }) + 5]))
+      .dimension(costDim)
+      .group(countPercost)
+      .x(d3.scale.linear().domain([-5, d3.max(travelData, function (d) { return d.Cost; }) + 5]))
       .elasticY(true)
       .centerBar(true)
       .xUnits(function(){return 10;})
@@ -191,16 +189,16 @@ _.each(beerData, function(d) {
       table.select('tr.dc-table-group').remove();
 
       // update map with breweries to match filtered data
-      breweryMarkers.clearLayers();
+      placesMarkers.clearLayers();
       _.each(allDim.top(100), function (d) {
         var loc = d.Why_here;
         var name = d.Name_of_Place;
         var marker = L.marker([d.lat, d.lng]);
         marker.bindPopup("<p>" + name + "</br>" + loc + "</p>");
-        breweryMarkers.addLayer(marker);
+        placesMarkers.addLayer(marker);
       });
-      map.addLayer(breweryMarkers);
-      map.fitBounds(breweryMarkers.getBounds());
+      map.addLayer(placesMarkers);
+      map.fitBounds(placesMarkers.getBounds());
     });
 
   // register handlers
