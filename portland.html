@@ -36,7 +36,7 @@
   <div class="row" id="control-row">
     
     <div class="col-md-6">
-      <h4>Where to go?</h4>
+      <h4><a href="/form.html">Click here to add points</a></h4>
       <div id="map" style="width: 100%; height: 300px"></div>
     </div>
 
@@ -91,6 +91,8 @@
 <script type="text/javascript" src="js/d3.js"></script>
 <script type="text/javascript" src="js/crossfilter.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.0-dev/dc.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/tabletop.js"></script>
 <!--js/dc.js-->
 <script type="text/javascript" src="js/leaflet.js"></script>
 <script type="text/javascript" src="js/underscore-min.js"></script>
@@ -105,7 +107,21 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{
   //maxZoom: 16
 } ).addTo(map);
 
-d3.csv('Portland Trip (Responses) - Form Responses 1.csv', function(error, data) {
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ebVZAzUPaU_4l5OD7E1ABXFK5H7mPf8FY4HcMWtlMQ8/pubhtml';
+
+function renderSpreadsheetData() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: draw,
+                     simpleSheet: true } )
+}
+
+
+
+
+
+
+
+function draw(data, tabletop) {
 //d3.csv('brewerydata.csv', function(error, data) {  
   var beerData = data;
 
@@ -228,8 +244,11 @@ _.each(beerData, function(d) {
 
   // showtime!
   dc.renderAll();
+}
 
-});
+renderSpreadsheetData();
+
+
 
 </script>
 </body></html>
