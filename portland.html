@@ -61,8 +61,9 @@
         <thead>
           <tr class="header">
             <th>Name of Place</th>
+            <th>Who's Point?</th>
             <th>Vote Count</th>
-            <th>Why to visit</th>
+            <th>Why go here</th>
             <th>Hours?</th>
             <th>Cost?</th>
             <th>Link to more info</th>
@@ -71,8 +72,9 @@
         <tfoot>
           <tr class="header">
             <th>Name of Place</th>
+            <th>Who's Point?</th>
             <th>Vote Count</th>
-            <th>Why to visit</th>
+            <th>Why go here</th>
             <th>Hours?</th>
             <th>Cost?</th>
             <th>Link to more info</th>
@@ -125,24 +127,19 @@ function draw(data, tabletop) {
 //d3.csv('brewerydata.csv', function(error, data) {  
   var beerData = data;
 
-  var fullDateFormat = d3.time.format('%a, %d %b %Y %X %Z');
-  var yearFormat = d3.time.format('%Y');
-  var monthFormat = d3.time.format('%b');
-  var dayOfWeekFormat = d3.time.format('%a');
-
 _.each(beerData, function(d) {
   d.count = +d.count;
-  d.MedianIncome = Math.round(+d.MedianIncome);
-  d.PopDensity = Math.round(+d.PopDensity);
+  d.Cost = Math.round(+d.Cost);
+  d.Length_of_Visit = Math.round(+d.Length_of_Visit);
   });     
 
   // set crossfilter
   var ndx = crossfilter(beerData);
 
   // create dimensions (x-axis values)
-  var NumReviewsDim = ndx.dimension(function(d) {return d.NumReviews;}),
-      miDim = ndx.dimension(function(d) {return d.MedianIncome;}),
-      PDDim = ndx.dimension(function(d) {return d.PopDensity;}),
+  var NumReviewsDim = ndx.dimension(function(d) {return d.Vote_Count;}),
+      miDim = ndx.dimension(function(d) {return d.Cost;}),
+      PDDim = ndx.dimension(function(d) {return d.Length_of_Visit;}),
       allDim = ndx.dimension(function(d) {return d;});
 
   // create groups (y-axis values)
@@ -163,7 +160,7 @@ _.each(beerData, function(d) {
       .height(180)
       .dimension(NumReviewsDim)
       .group(countPerNumReviews)
-      .x(d3.scale.linear().domain([-9, d3.max(beerData, function (d) { return d.NumReviews; })*1.1]))
+      .x(d3.scale.linear().domain([-9, d3.max(beerData, function (d) { return d.Vote_Count; })*1.1]))
       .elasticY(true)
       .centerBar(true)
       .xUnits(function(){return 10;})
@@ -177,7 +174,7 @@ _.each(beerData, function(d) {
       .height(180)
       .dimension(PDDim)
       .group(countPerPD)
-      .x(d3.scale.linear().domain([-0.5, d3.max(beerData, function (d) { return d.PopDensity; })*1.1]))
+      .x(d3.scale.linear().domain([-0.5, d3.max(beerData, function (d) { return d.Length_of_Visit; })*1.1]))
       .xUnits(function(){return 10;})
       .barPadding(2)
       .elasticY(true)
@@ -191,7 +188,7 @@ _.each(beerData, function(d) {
       .height(180)
       .dimension(miDim)
       .group(countPerMI)
-      .x(d3.scale.linear().domain([-5, d3.max(beerData, function (d) { return d.MedianIncome; }) + 5]))
+      .x(d3.scale.linear().domain([-5, d3.max(beerData, function (d) { return d.Cost; }) + 5]))
       .elasticY(true)
       .centerBar(true)
       .xUnits(function(){return 10;})
@@ -209,14 +206,15 @@ _.each(beerData, function(d) {
     .dimension(allDim)
     .group(function (d) { return 'dc.js insists on putting a row here so I remove it using JS'; })
     .columns([
-      function (d) { return d.Brewery; },
-      function (d) { return d.NumReviews; },
-      function (d) { return d.Address; },
-      function (d) { return d.PopDensity; },
-      function (d) { return d.MedianIncome; },
-      function (d) { return d.YelpRating; }
+      function (d) { return d.Name_of_Place; },
+      function (d) { return d.Whos_point; },
+      function (d) { return d.Vote_Count; },
+      function (d) { return d.Why_here; },
+      function (d) { return d.Length_of_Visit; },
+      function (d) { return d.Cost; },
+      function (d) { return d.Link; }
     ])
-    .sortBy(function (d) { return d.NumReviews; })
+    .sortBy(function (d) { return d.Vote_Count; })
     .order(d3.descending)
     .size(Infinity)
     .on('renderlet', function (table) {
@@ -226,8 +224,8 @@ _.each(beerData, function(d) {
       // update map with breweries to match filtered data
       breweryMarkers.clearLayers();
       _.each(allDim.top(100), function (d) {
-        var loc = d.Address;
-        var name = d.Brewery;
+        var loc = d.Why_here;
+        var name = d.Name_of_Place;
         var marker = L.marker([d.lat, d.lng]);
         marker.bindPopup("<p>" + name + "</br>" + loc + "</p>");
         breweryMarkers.addLayer(marker);
