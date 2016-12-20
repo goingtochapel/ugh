@@ -10,5 +10,5 @@ Last summer, I launched a product that used sales data from restaurants along wi
 ### What can it do?
 On this dashboard you can find breweries based on filters like: number of yelp reviews, yelp rating, population density and median income.
 
-![]({{ site.baseurl }}/images/breweries.JPG)
+![]({{ site.baseurl }}/images/breweries.JPG)(/breweries.html)
 *Here's a screenshot of the dashboard*
