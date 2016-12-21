@@ -6,7 +6,7 @@ permalink: /maps/
 
 #### Currently working on a crowdsourced travel app:
 
-<a href="https://crowdmap.herokuapp.com/">![]({{ site.baseurl }}/images/inspirationpoint.JPG)</a>
+<a href="http://www.gowherenext.co/">![]({{ site.baseurl }}/images/inspirationpoint.JPG)</a>
 
 #### Here's a brewery visualization using yelp and census data to dive into US breweries:
 
