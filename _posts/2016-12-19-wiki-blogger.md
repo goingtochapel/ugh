@@ -16,7 +16,7 @@ After hearing the presentation on the Maize App, I realized mocking up my idea w
 
 Additionally, I figured out how to host on Heroku and instantly show new data once submitted. Check it out.. you just move the marker where you want to add a point and put the details in with it:
 
-<a href="https://crowdmap.herokuapp.com/">![]({{ site.baseurl }}/images/inspirationpoint.JPG)</a>
+<a href="http://www.gowherenext.co/">![]({{ site.baseurl }}/images/inspirationpoint.JPG)</a>
 *Here's screenshot of the site. Click on the picture to go check it out*
 
 Feel free to reach out if you have any suggestions. I'm working on adding filtering and voting buttons to help find the best content.
