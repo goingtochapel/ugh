@@ -6,7 +6,7 @@ title: Wiki Blogger
 After a recent Django meetup I saw an easy and cheap path to mock up an idea I've been working on. The post below shows my dive into creating a MEAN stack app to crowdsource and rank travel blogs (something I wish I had this summer in Asia).
 
 ### The Maize App
-Two weeks ago I went to a Django meetup where the presentation was on the Maize App stack which is a locally run project to find nearby food trucks. The CTO of the project presented on their stack (picture below) which they were able to set up for $20.
+Two weeks ago I went to a Django meetup where the presentation was on the Maize App stack, which is a locally run project to find nearby food trucks. The CTO of the project presented on their stack (picture below) which they were able to set up for $20.
 
 ![]({{ site.baseurl }}/images/maizestack.jpg)
 *They use Ionic, but React Native is a pretty similar tool*
