@@ -28,4 +28,21 @@ text {
   padding-bottom: 20px;
 }
 
+
+.ext-links {
+	position: fixed;
+	top: 1.5em;
+	right: 1.5em;
+}
+
+.ext-link {
+	display: block;
+	opacity: 0.5;
+	-webkit-animation: fadein 1s;
+	animation: fadein 1s;
+}
+.ext-link:hover {
+	opacity: 1;
+}
+
 a { cursor: pointer }
