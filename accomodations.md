@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accomodations
-permalink: /Accomodations/
+permalink: /accomodations/
 ---
 
 #### Fill in Accomodation details
