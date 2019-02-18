@@ -53,4 +53,4 @@ Iron Station, NC
 #### Special thanks to our gracious hosts: Sam Jackson
 
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1l-2KuiKD9YGM6nisbpKMbiqgCrjVUiKp&hl=en" width="640" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=1l-2KuiKD9YGM6nisbpKMbiqgCrjVUiKp&hl=en" width="100%" height="480"></iframe>
