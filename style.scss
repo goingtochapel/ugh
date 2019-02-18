@@ -278,6 +278,20 @@ nav {
   background-color: $lightGray;
 }
 
+.photo-gallery, .photo-gallery li {
+	list-style: none;
+	padding: 0;
+}
+
+.photo-gallery li {
+	display: inline-block;
+	width: 33%;
+}
+
+.photo-gallery li img {
+	width: 100%;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
