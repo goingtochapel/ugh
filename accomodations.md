@@ -4,7 +4,7 @@ title: Where should you stay?
 permalink: /accomodations/
 ---
 
-We set up two hotel blocks downtown that will be convenient for shuttles for the weekend 
+We set up two hotel blocks downtown that will be convenient for shuttles for the weekend. If you want to get together a bigger group there are some houses available on Airbnb. <a href="https://www.airbnb.com/wishlists/455266952/join?invite_code=KPKXJRUR&inviter_id=25142608">Click here to look at some of our ideas on Airbnb.</a>
 
 ## Aloft Downtown
 <a href="https://www.marriott.com/events/start.mi?id=1549550430184&key=GRP">Click to book on Aloft Block ($130)</a>
