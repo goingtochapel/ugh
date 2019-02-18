@@ -33,6 +33,9 @@ The 11pm shuttle will continue to Providence Road Sundries.
 #### Special thanks to our gracious hosts: Ms. Shelley Lein & Mr. Dean Paul
 
 ## Saturday, October 12th
+### Interested in joining a group? 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBjZ3YprMhxdUfk6XvmTqQp-1ssXWD_tE3Gc-1sVko3qPTLQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
 ### 3:45 pm : Depart for Farm
 #### From Hotel Blocks Downtown:
 Transportation will be provided from the Charlotte City Center Marriott leaving at 3:45 PM sharp.
