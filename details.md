@@ -9,8 +9,6 @@ permalink: /details/
 ### 6-9 pm : Family Welcome Dinner 
 #### Casual Attire
 
-#### Special thanks to our gracious hosts: KJ Choi
-
 ## Friday, October 11st
 
 ### 5-6 pm : Wedding Rehearsal on the Duke Mansion Lawn
