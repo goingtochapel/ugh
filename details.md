@@ -10,7 +10,7 @@ permalink: /details/
 #### Casual Attire
 540 Hempstead Place, Charlotte, NC 
 
-#### Special thanks to our gracious hosts: Names here
+#### Special thanks to our gracious hosts: KJ Choi
 
 ## Friday, October 21st
 
@@ -24,7 +24,9 @@ Cocktail Attire
 
 ### 8-11 pm : Welcome Party at the Duke Mansion
 #### Casual Attire
-For guests staying downtown, transportation will be provided from the Charlotte Center City Marriott beginning at 7:30 PM and will loop between hotel and Welcome Party throughout the evening. The 11pm shuttle will continue to Providence Road Sundries.
+For guests staying downtown, transportation will be provided from the Charlotte Center City Marriott beginning at 7:30 PM and will loop between hotel and Welcome Party throughout the evening. 
+
+The 11pm shuttle will continue to Providence Road Sundries.
 400 Hermitage Road, Charlotte, NC, Valet Parking Provided
 
 #### Special thanks to our gracious hosts: Ms. Shelley Lein & Mr. Dean Paul
@@ -39,8 +41,6 @@ For guests not staying at the designated hotels: Transportation will be provided
 #### Casual-Cocktail Attire - Farm Friendly Shoes (Flats, Wedges or Boots)
 For all guests: There will be shuttles returning to Charlotte throughout the evening, the first shuttle will leave at 9pm.
 
-4400 Randleman Road
-
 Iron Station, NC
 
 #### Special thanks to our gracious hosts: Al & June Rhyne
@@ -50,7 +50,7 @@ Iron Station, NC
 #### Casual Attire
 540 Hempstead Place, Charlotte, NC
 
-#### Special thanks to our gracious hosts: Names here
+#### Special thanks to our gracious hosts: Sam Jackson
 
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1l-2KuiKD9YGM6nisbpKMbiqgCrjVUiKp&hl=en" width="640" height="480"></iframe>
