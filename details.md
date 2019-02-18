@@ -29,6 +29,7 @@ The 11pm shuttle will continue to Providence Road Sundries.
 
 400 Hermitage Road, Charlotte, NC, Valet Parking Provided
 
+<a href="https://goo.gl/maps/jS5dpdGLV2r">![]({{ site.baseurl }}/images/duke-mansion.jpg)</a>
 #### Special thanks to our gracious hosts: Ms. Shelley Lein & Mr. Dean Paul
 
 ## Saturday, October 12th
@@ -45,6 +46,7 @@ There will be shuttles returning to Charlotte throughout the evening, the first 
 
 Iron Station, NC
 
+<a href="">![]({{ site.baseurl }}/images/dogatfarm.JPG)</a>
 #### Special thanks to our gracious hosts: Al & June Rhyne
 
 ## Sunday, October 13th
