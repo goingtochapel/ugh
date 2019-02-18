@@ -1,6 +1,6 @@
 ---
 layout: page
-Title: The weekend plan
+title: What's the plan for the weekend?
 permalink: /details/
 ---
 
