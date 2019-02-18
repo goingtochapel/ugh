@@ -4,6 +4,8 @@ title: What's the plan for the weekend?
 permalink: /details/
 ---
 
+<p align="center">
+  
 ## Thursday, October 10th
 
 ### 6-9 pm : Family Welcome Dinner 
@@ -52,6 +54,8 @@ Iron Station, NC
 ## Sunday, October 13th
 ### 11-1 pm : Farewell Breakfast for Out of Town Guests
 #### Casual Attire
+
+</p>
 
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1l-2KuiKD9YGM6nisbpKMbiqgCrjVUiKp&hl=en" width="100%" height="480"></iframe>
