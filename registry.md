@@ -6,7 +6,7 @@ permalink: /registry/
 
 The fact that you are willing to spend time and money to celebrate with us is incredible. If you want to also give us a gift, we have picked out things we are excited about below. Thank you!
 
-<div style="width:100%;align:center;">
+<div id="over" style="position:absolute; width:100%; height:100%>
   <a href="https://www.rei.com/GiftRegistryDetails/15331012">![]({{ site.baseurl }}/images/1200px-REI_logo.JPG)</a>
 </div>
 
