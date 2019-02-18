@@ -6,9 +6,8 @@ permalink: /details/
 
 ## Thursday, October 10th
 
-### 6-9 pm : Welcome Dinner for Out of Town Guests
+### 6-9 pm : Family Welcome Dinner 
 #### Casual Attire
-540 Hempstead Place, Charlotte, NC 
 
 #### Special thanks to our gracious hosts: KJ Choi
 
@@ -53,9 +52,6 @@ Iron Station, NC
 ## Sunday, October 13th
 ### 11-1 pm : Farewell Breakfast for Out of Town Guests
 #### Casual Attire
-540 Hempstead Place, Charlotte, NC
-
-#### Special thanks to our gracious hosts: Sam Jackson
 
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1l-2KuiKD9YGM6nisbpKMbiqgCrjVUiKp&hl=en" width="100%" height="480"></iframe>
