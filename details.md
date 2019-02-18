@@ -1,5 +1,6 @@
 ---
 layout: page
+Title: The weekend plan
 permalink: /details/
 ---
 
