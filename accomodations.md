@@ -1,8 +1,10 @@
 ---
 layout: page
-title: 
+title: Where should you stay?
 permalink: /accomodations/
 ---
+
+We set up two hotel blocks downtown that will be convenient for shuttles for the weekend 
 
 ## Aloft Downtown
 <a href="https://www.marriott.com/events/start.mi?id=1549550430184&key=GRP">Click to book on Aloft Block ($130)</a>
