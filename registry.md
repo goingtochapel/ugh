@@ -6,8 +6,14 @@ permalink: /registry/
 
 The fact that you are willing to spend time and money to celebrate with us is incredible. If you want to also give us a gift, we have picked out things we are excited about below. Thank you!
 
-<div id="over" style="position:absolute; width:100%; height:100%>
-  <a href="https://www.rei.com/GiftRegistryDetails/15331012">![]({{ site.baseurl }}/images/1200px-REI_logo.JPG)</a>
+<div class="text-center">
+<a href="https://www.rei.com/GiftRegistryDetails/15331012" target="_blank" title="REI Registry">
+	
+	<img src="/images/1200px-REI_logo.JPG">
+	
+</a>
 </div>
+
+
 
 <a class="zola-registry-embed" href="www.zola.com/registry/boandwhit" data-registry-key="boandwhit">Our Wedding Registry</a><script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
