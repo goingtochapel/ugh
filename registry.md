@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Registry
+title: 
 permalink: /registry/
 ---
 
