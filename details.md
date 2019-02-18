@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Details
+title: 
 permalink: /details/
 ---
 
