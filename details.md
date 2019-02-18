@@ -1,6 +1,5 @@
 ---
 layout: page
-title: 
 permalink: /details/
 ---
 
@@ -34,14 +33,14 @@ The 11pm shuttle will continue to Providence Road Sundries.
 ## Saturday, October 12th
 ### 3:45 pm : Depart for Farm
 #### From Hotel Blocks Downtown:
-Transportation will be provided from the Charlotte City Center Marriott to the farm, leaving at 3:45 PM sharp.
+Transportation will be provided from the Charlotte City Center Marriott leaving at 3:45 PM sharp.
 
 #### For non-hotel guests:
 Transportation will be provided from Myers Park United Methodist Church leaving at 3:45 pm sharp. Please park across Queens Road.
 
 ### 5:00 – 11 pm : Wedding Ceremony at Rhyne Family Farm
 #### Casual-Cocktail Attire - Farm Friendly Shoes (Flats, Wedges or Boots)
-For all guests: There will be shuttles returning to Charlotte throughout the evening, the first shuttle will leave at 9pm.
+There will be shuttles returning to Charlotte throughout the evening, the first shuttle will leave at 9pm.
 
 Iron Station, NC
 
