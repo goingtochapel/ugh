@@ -5,7 +5,7 @@ permalink: /details/
 ---
 
 ## Friday
-### 8-11 pm : Welcome Party at the Duke Mansion
+### 8-11 pm : Welcome Party at the Duke Mansion (out of town guests)
 <a href="https://goo.gl/maps/jS5dpdGLV2r">![]({{ site.baseurl }}/images/duke-mansion.jpg)</a>
 #### Casual Attire
 
