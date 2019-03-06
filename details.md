@@ -23,7 +23,7 @@ The 11pm shuttle will continue to Providence Road Sundries.
 Transportation will be provided from the Charlotte City Center Marriott leaving at 3:45 PM sharp.
 
 #### For non-hotel guests:
-Transportation will be provided from Myers Park United Methodist Church leaving at 3:45 pm sharp. Please park across Queens Road.
+Additional bus space and driving directions will also be available. 
 
 ### 5:00 – 11 pm : Wedding Ceremony at Rhyne Family Farm
 #### Casual-Cocktail Attire - Farm Friendly Shoes (Flats, Wedges or Boots)
