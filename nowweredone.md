@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /nowweredone/
+permalink: /nowwedone/
 ---
 
 <a href="/details">![]({{ site.baseurl }}/images/nowwedone.PNG)</a>
