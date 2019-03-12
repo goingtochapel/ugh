@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ok/
+permalink: /nowweredone/
 ---
 
-<a href="/details.md">![]({{ site.baseurl }}/images/nowwedone.PNG)</a>
+<a href="/details">![]({{ site.baseurl }}/images/nowwedone.PNG)</a>
