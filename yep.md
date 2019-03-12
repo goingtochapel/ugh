@@ -3,4 +3,4 @@ layout: page
 permalink: /yep/
 ---
 
-<a href="/nowweredone">![]({{ site.baseurl }}/images/yep.JPG)</a>
+<a href="/nowwedone">![]({{ site.baseurl }}/images/yep.JPG)</a>
