@@ -9,9 +9,7 @@ permalink: /details/
 <a href="https://goo.gl/maps/jS5dpdGLV2r">![]({{ site.baseurl }}/images/duke-mansion.jpg)</a>
 #### Casual Attire
 
-For guests staying downtown, transportation will be provided from the Charlotte Center City Marriott beginning at 7:30 PM and will loop between hotel and Welcome Party throughout the evening. 
-
-The 11pm shuttle will continue to Providence Road Sundries.
+Late night at Providence Road Sundries starting at 11pm.
 
 #### Special thanks: Ms. Shelley Lein & Mr. Dean Paul
 
