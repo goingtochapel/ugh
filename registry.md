@@ -7,7 +7,7 @@ permalink: /registry/
 The fact that you are willing to spend time and money to celebrate with us is incredible. If you want to also send a gift, we have picked out things we expect to keep for a long time below. Thank you!
 
 
-<a href="https://www.rei.com/GiftRegistryDetails/15331012">![]({{ site.baseurl }}/images/1200px-REI_logo.jpg)</a>
+<a href="https://www.myregistry.com/rei/wedding-registry/Bo-R-and-Whitney-P-SAN-FRANCISCO-CA/1874363">![]({{ site.baseurl }}/images/1200px-REI_logo.jpg)</a>
 
 
 
