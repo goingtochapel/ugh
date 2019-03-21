@@ -12,7 +12,7 @@ Bus pickup Saturday afternoon.
 
 ## Aloft Downtown
 <a href="https://www.marriott.com/events/start.mi?id=1549550430184&key=GRP">Click to book on Aloft Block ($130)</a>
-Two block walk to bus pickup at Marriott City Center Friday night (7:30pm) and Saturday Afternoon (3:45 pm)
+Two block walk to bus pickup at Marriott City Center Saturday Afternoon (3:45 pm).
 
 ## Bus pickup
 Bus will from the Marriott City Center downtown and Charlotte Methodist Church parking lot on Saturday afternoon at 3:45pm .
