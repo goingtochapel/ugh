@@ -15,7 +15,7 @@ Late night at Providence Road Sundries starting at 11pm.
 
 ## Saturday
 ### 4:30pm - 11pm : Iron Station Farm
-<a href="/hey">![]({{ site.baseurl }}/images/dogatfarm.JPG)</a>
+<a href="/hey">![]({{ site.baseurl }}/images/IMG_8818.jpg)</a>
 
 #### From Hotel Blocks Downtown:
 Transportation will be provided from the Charlotte City Center Marriott leaving at 3:45 PM sharp. Buses will depart from [N Church Street behind Marriott](https://goo.gl/maps/s8BJ7UNAto9NipEB9).
