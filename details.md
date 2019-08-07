@@ -21,7 +21,7 @@ Late night at Providence Road Sundries starting at 11pm.
 Transportation will be provided from the Charlotte City Center Marriott leaving at 3:45 PM sharp. Buses will depart from [N Church Street behind Marriott](https://goo.gl/maps/s8BJ7UNAto9NipEB9).
 
 #### For Non-Hotel guests choosing to ride a bus:
-Transportation will be provided from the Myers Park United Methodist lot across Queens Rd. Buses will leave at 3:45pm from [Pembroke side of the parking lot](https://goo.gl/maps/L4s5uMmuPhL5NfSH6).
+Transportation will be provided from the Myers Park United Methodist lot across Queens Rd. Buses will leave at 3:45pm from [Pembroke side of the parking lot](https://goo.gl/maps/PsK6JLwGLDp1xXEr9).
 
 #### For Guests electing to Drive:
 For Guests electing to Drive:
